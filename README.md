@@ -218,6 +218,19 @@ Exact steps may vary depending on the hosting and deployment setup.
 
 ---
 
+## Notes
+
+* Recommended Python version: **3.11** (the project should also work with Python 3.10+).
+* The bot expects access to the internet to reach both Telegram and Google APIs.
+* A Google Cloud project with a service account and access to Google Sheets is required.
+* The bot needs a running environment where a long-lived Python process is allowed (local machine, server, NAS, or Docker container).
+* Before running the bot, make sure that:
+
+  * The service account has "Editor" access to the target Google Sheets document.
+  * The `.env` file is configured with valid values for `TELEGRAM_BOT_TOKEN`, `GOOGLE_SERVICE_ACCOUNT_JSON` and `SPREADSHEET_ID`.
+
+---
+
 ## Status
 
 This repository contains a minimal implementation of a Telegram bot that integrates with Google Sheets:
