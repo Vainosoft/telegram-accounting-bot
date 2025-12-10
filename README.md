@@ -58,3 +58,17 @@ telegram-accounting-bot/
   docs/
     technical_specification.md
     project_chats.md
+
+---
+
+## Status
+
+This repository contains a minimal implementation of a Telegram bot for tracking income and expenses in Google Sheets.
+
+Current state:
+- Command handlers for `/start`, `/help`, `/income`, `/expense` and `/excel` are implemented.
+- Integration with Google Sheets via a service account is implemented in `google_sheets_client.py`.
+- The code is structured as a small, clean example of how to combine Telegram bot logic with Google Sheets.
+
+Additional testing, configuration and deployment steps may be required before using this bot in a real production environment.
+
